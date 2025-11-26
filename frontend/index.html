@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfake Detector</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card glass">
+
+        <h2 class="title">Deepfake Image Analysis</h2>
+        <p class="subtitle">Upload an image to detect authenticity</p>
+
+        <!-- Upload Box -->
+        <div id="drop-area" class="upload-box">
+            <div class="upload-icon"></div>
+            <p>Select an image or drag it here</p>
+            <input type="file" id="fileInput" accept="image/*" />
+        </div>
+
+        <!-- Preview -->
+        <img id="preview" class="preview-img" />
+
+        <!-- Loader -->
+        <div id="loader" class="loader"></div>
+
+        <!-- Result -->
+        <div id="resultBox" class="result-box">
+            <h3 id="resultLabel"></h3>
+
+            <div class="prob-section">
+                <label>Real Probability</label>
+                <div class="bar-bg">
+                    <div id="realBar" class="bar real"></div>
+                </div>
+            </div>
+
+            <div class="prob-section">
+                <label>Fake Probability</label>
+                <div class="bar-bg">
+                    <div id="fakeBar" class="bar fake"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
