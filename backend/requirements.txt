@@ -1,8 +1,10 @@
 fastapi
 uvicorn
-transformers
-torch
 pillow
-huggingface_hub
-numpy
 python-multipart
+huggingface_hub
+transformers==4.57.3
+
+# Install PyTorch 2.9.1 CPU (prebuilt wheel)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1+cpu

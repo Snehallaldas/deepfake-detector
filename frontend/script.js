@@ -49,7 +49,7 @@ async function analyzeImage() {
     formData.append("file", selectedFile);
 
     try {
-        const res = await fetch("https://deepfake-backend.onrender.com/predict", {
+        const res = await fetch("http://127.0.0.1:8000/predict", {
             method: "POST",
             body: formData
         });
