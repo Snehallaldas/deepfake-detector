@@ -49,7 +49,7 @@ async function analyzeImage() {
     formData.append("file", selectedFile);
 
     try {
-        const res = await fetch("https://deepfake-backend-production.up.railway.app/predict", {
+        const res = await fetch("https://deepfake-detector-wmdv.onrender.com/predict", {
             method: "POST",
             body: formData
         });
